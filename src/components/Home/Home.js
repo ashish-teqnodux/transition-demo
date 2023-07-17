@@ -1,31 +1,3 @@
-// import React, { useState } from "react";
-// import "./ButtonGroup.css"; // CSS file for styling
-
-// const ButtonGroup = () => {
-//   const [showBottomButtonGroup, setShowBottomButtonGroup] = useState(false);
-
-//   const handleButtonClick = () => {
-//     setShowBottomButtonGroup(true);
-//   };
-
-//   return (
-//     <div className="container">
-//       <div className="topButtonGroup">
-//         <button onClick={handleButtonClick}>Click Me</button>
-//       </div>
-//       {showBottomButtonGroup && (
-//         <div className="bottomButtonGroup">
-//           <button>Button 1</button>
-//           <button>Button 2</button>
-//           <button>Button 3</button>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ButtonGroup;
-
 import React, { useState } from "react";
 import "./Home.css";
 import FormGroup from "../FormGroup/FormGroup";
@@ -58,7 +30,7 @@ const Home = () => {
               className: `${
                 !showBottomButtonGroup
                   ? "round-btn"
-                  : "inline-flex justify-center items-center text-center rounded-full bg-white border-none shadow-lg w-[80px] h-[80px]  text-sm font-semibold p-4 translate-x-1 -translate-y-1"
+                  : "inline-flex justify-center items-center rounded-full bg-white border-none shadow-lg w-[80px] h-[80px] text-sm font-semibold p-4 translate-x-1 -translate-y-1"
               } transition-all ease-in-out duration-700`,
             },
           ]}
