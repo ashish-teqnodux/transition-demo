@@ -4,12 +4,10 @@ import { useEffect } from "react";
 
 export const AuthRequired = ({ children }) => {
   const navigate = useNavigate();
-  // Replace with your authentication logic
   const auth = getAuth();
 
   useEffect(() => {
     if (!!!auth?.token) {
-      // Redirect to the login page if not authenticated
       navigate("/login");
     }
   }, [auth, navigate]);

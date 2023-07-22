@@ -6,7 +6,6 @@ import { getAuth, setAuth } from "../../services/identity.service";
 import { useNavigate } from "react-router-dom";
 import MuiSnackbar from "../UI/MuiSnackbar";
 import LoginForm from "./LoginForm";
-import Text from "../UI/Text";
 import Image from "../UI/Image";
 
 const Login = () => {
